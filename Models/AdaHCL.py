@@ -1,12 +1,15 @@
 from torch import nn
 import torch.nn.functional as F
 import torch
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from Params import args
 from copy import deepcopy
 import numpy as np
 import math
 import scipy.sparse as sp
-from Utils.Utils import contrastLoss, calcRegLoss, pairPredict, tripleLoss
+from Utils.Metrics import contrastLoss, calcRegLoss, pairPredict, tripleLoss
 import time
 import torch_sparse
 

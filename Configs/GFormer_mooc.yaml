@@ -1,0 +1,14 @@
+# GFormer on MOOC Dataset
+# Reference: Li et al. (2023) SIGIR
+
+lr: 1.0e-3
+batch: 4096
+tstBat: 256
+reg: 1.0e-5
+epoch: 20
+latdim: 128
+gnn_layer: 2
+topk: 20
+data: mooc
+gpu: 0
+seed: 2026

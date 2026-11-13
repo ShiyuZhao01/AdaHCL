@@ -1,3 +1,6 @@
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import pickle
 import numpy as np
 from scipy.sparse import csr_matrix, coo_matrix, dok_matrix
